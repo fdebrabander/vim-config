@@ -68,9 +68,12 @@ set laststatus=2
 " Autocompletion with <TAB> for the 'command line'
 set wildmenu
  
-" Autocompletion for editing
-set ofu=syntaxcomplete#Complete
- 
+" Rainbow parentheses plugin
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
 " Use file templates for new files
 autocmd! BufNewFile * silent! 0r ~/.vim/skel/tmpl.%:e
  
