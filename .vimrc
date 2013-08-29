@@ -10,7 +10,10 @@ set nobackup
 set noswapfile
 set title
 set history=200
- 
+
+" Use pathogen for plugin management
+execute pathogen#infect()
+
 " Incremental search while typing
 set incsearch
 " Highlight search matches
