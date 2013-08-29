@@ -1,3 +1,5 @@
+set nocompatible
+
 syntax on
 filetype on
 filetype plugin on
@@ -5,7 +7,9 @@ filetype plugin on
 set ruler
 set showmode
 set nobackup
+set noswapfile
 set title
+set history=200
  
 " Incremental search while typing
 set incsearch
@@ -32,9 +36,8 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set smartindent
-set copyindent
- 
-" Show whitespaces
+
+" Show special characters
 set list
 set listchars=eol:↵,tab:➥\ ,trail:·,extends:>,precedes:<
 highlight NonText ctermfg=grey guifg=#ffffff
