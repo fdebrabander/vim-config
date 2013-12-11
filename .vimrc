@@ -27,6 +27,9 @@ set background=dark
 set mouse=a
 " Enable paste-mode toggle
 set pastetoggle=<F2>
+
+" Copy to from system clipboard, so you can paste between vim sessions
+set clipboard=unnamedplus
  
 " Briefly highlight matching brackets
 set showmatch
