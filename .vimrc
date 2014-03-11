@@ -85,3 +85,6 @@ autocmd BufWritePre * :%s/\s\+$//e
  
 " Sudo to write
 cmap w!! w !sudo tee % >/dev/null
+
+" Doxygen syntax
+let g:load_doxygen_syntax=1
