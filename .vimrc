@@ -88,3 +88,7 @@ cmap w!! w !sudo tee % >/dev/null
 
 " Doxygen syntax
 let g:load_doxygen_syntax=1
+
+" Save undo history
+set undodir=~/.vim/undo
+set undofile
