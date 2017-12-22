@@ -57,6 +57,9 @@ set cindent
 " Automatic line length
 set textwidth=79
 match ErrorMsg '\%>79v.\+'
+
+" Trailing whitespaces
+match ErrorMsg '\s\+$'
  
 " More powerful backspace (smart backspace for indentation)
 set backspace=indent,eol,start
@@ -92,3 +95,8 @@ let g:load_doxygen_syntax=1
 " Save undo history
 set undodir=~/.vim/undo
 set undofile
+
+" Smarter line joins with 'J' for comments
+if v:version > 703 || v:version == 703 && has('patch541')
+  set formatoptions+=j
+endif
