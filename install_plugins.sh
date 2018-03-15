@@ -5,7 +5,7 @@ FETCH="curl -Sso "
 # Install pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle; \
 ${FETCH} ~/.vim/autoload/pathogen.vim \
-    https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+    https://github.com/tpope/vim-pathogen/raw/master/autoload/pathogen.vim
 
 cd ~/.vim/bundle
 git clone https://github.com/airblade/vim-gitgutter.git
