@@ -1,5 +1,8 @@
 set nocompatible
 
+" Use pathogen for plugin management
+execute pathogen#infect()
+
 syntax on
 filetype on
 filetype plugin on
@@ -11,8 +14,12 @@ set noswapfile
 set title
 set history=200
 
-" Use pathogen for plugin management
-execute pathogen#infect()
+" Theme configuration - requires the various plugins
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+let g:airline_theme='solarized'
+set laststatus=2
 
 " Incremental search while typing
 set incsearch
@@ -20,8 +27,6 @@ set incsearch
 set hlsearch
 " Disable search highlights with ,/
 nmap <silent> \ :nohlsearch<CR>
- 
-set background=dark
  
 " Enable mouse
 set mouse=a
@@ -35,7 +40,8 @@ set clipboard=unnamedplus
 set showmatch
  
 " Line numbers
-set nu
+set number
+set numberwidth=6
  
 " Tab width and automatic indentation
 set tabstop=4
@@ -66,10 +72,6 @@ set backspace=indent,eol,start
  
 " For space characters as tabs
 set expandtab
- 
-" Custom statusbar
-set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
-set laststatus=2
  
 " Autocompletion with <TAB> for the 'command line'
 set wildmenu
