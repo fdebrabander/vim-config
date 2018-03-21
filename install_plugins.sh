@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FETCH="curl -Sso "
+FETCH="curl -LSso "
 
 # Install pathogen
 mkdir -p ~/.vim/autoload ~/.vim/bundle; \
