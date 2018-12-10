@@ -1,4 +1,5 @@
 set nocompatible
+set encoding=utf-8
 
 " Use pathogen for plugin management
 execute pathogen#infect()
